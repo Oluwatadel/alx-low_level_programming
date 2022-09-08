@@ -4,7 +4,7 @@
  *
  * display a given string with printf
  *
- * return always 0
+ * return: always 0
  *
  */
 

@@ -20,7 +20,6 @@ int main(void)
 
 		a++;
 	}
-	
 	putchar('\n');
 
 

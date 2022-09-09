@@ -3,7 +3,6 @@
 #include <stdio.h>
 
 /**
- *
  * main -Entry point
  *
  * Description: Print negative, positive or zero after generating

@@ -2,21 +2,15 @@
 #include <time.h>
 #include <stdio.h>
 
-/* Print a random number to be negative, positive or zero*/
-
-/*
+/**
  *
- * main -Print negative, positive or zero after generating
+ * main -Entry point
+ *
+ * Description: Print negative, positive or zero after generating
  * a random number
  *
  *
- * Return: Always 0
- *
- */
-
-/**
- * Main - The main function is for entry
- * the value of main is (...)*
+ * Return: Always 0 (success)
  */
 int main(void)
 {

@@ -2,38 +2,37 @@
 #include <time.h>
 #include <stdio.h>
 
+
 /*
- * print the last digit of a number
- */
+ *
+ * Print the last digit of a number
+ *
+ *
+ **/
 
 /**
- *  main - This is the entry point for main
+ * main -To print the last digit of a number
  */
 int main(void)
 {
-	int n;
+	int n, t;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	
-	if ((n % 10) > 5)
+	t = (n % 10)
 
+	if (t > 5)
 	{
-		printf("Last digit of %d is %d and is greater than 5\n", n, n % 10);
+		printf("Last digit of %d is %d and is greater than 5\n", n, t);
 	}
 
-	else if ((n % 10) < 6 && (n % 6) != 0)
-
+	else if (t < 6 && t != 0)
 	{
-		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, n % 10);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, t);
 	}
-
 	else
-
 	{
-		printf("Last digit of %d is %d and is 0\n", n, n % 10);
-	}
-
+		printf("Last digit of %d is %d and is 0\n", n, t);
 	return (0);
 }

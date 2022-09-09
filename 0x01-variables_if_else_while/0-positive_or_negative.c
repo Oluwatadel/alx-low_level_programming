@@ -15,7 +15,8 @@
  */
 
 /**
- * Main -The main function is for entry 
+ * Main - The main function is for entry
+ * the value of main is (...)*
  */
 int main(void)
 {

@@ -6,7 +6,7 @@
 
 /*
  *
- * main -Print negative, positive or zer after generating 
+ * main -Print negative, positive or zero after generating
  * a random number
  *
  *

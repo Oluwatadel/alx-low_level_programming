@@ -2,14 +2,12 @@
 #include <time.h>
 #include <stdio.h>
 
-/* Print a random number to be negative, positive or ero
+/* Print a random number to be negative, positive or zero*/
+
+/*
  *
- *
- * Description:  This program is to print negative, positive
- * or zer
- *
- *
- * main -Entry point
+ * main -Print negative, positive or zer after generating 
+ * a random number
  *
  *
  * Return: Always 0

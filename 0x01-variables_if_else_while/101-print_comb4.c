@@ -13,7 +13,7 @@ int main(void)
 	for (digit1 = 10; digit1 < 19; digit1++)
 
 	{
-		if ((digit2 % 10) > (digit1 % 10))
+		if ((digit2 % 10) < (digit1 % 10))
 
 		{
 			putchar((digit1 % 10) + '0');

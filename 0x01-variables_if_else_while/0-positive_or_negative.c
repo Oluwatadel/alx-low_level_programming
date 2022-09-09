@@ -14,6 +14,9 @@
  *
  */
 
+/**
+ * Main - The main function is for entry 
+ * */
 int main(void)
 {
 	int n;

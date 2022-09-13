@@ -2,21 +2,22 @@
 #include "main.h"
 
 /**
- * main - writes the character c to stdout
+ * print_alphabet - prints the character a to z to stdout
  *
  * Description: To printed out because of the _putchar function
  *
  * Return: On success 0.
  */
-int main(void)
+void print_alphabet(void)
 {
-	void print_alphabet(void);
+	char i = 'a';
+
+	while (i <= 'z')
+
 	{
-		char i = 'a';
-		while (i <= 'z')
-			_putchar('i');
+		_putchar('i');
 		_putchar('\n');
+
 		i++;
 	}
-	return (0);
 }

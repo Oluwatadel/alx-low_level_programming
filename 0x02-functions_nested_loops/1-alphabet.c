@@ -4,7 +4,7 @@
 /**
  * print_alphabet - prints the character a to z to stdout
  *
- * Description: To printed out because of the _putchar function
+ * Description: To print a to z using  _putchar function
  *
  * Return: On success 0.
  */

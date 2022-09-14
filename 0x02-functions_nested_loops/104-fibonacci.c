@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int counter = 2;
+	int counter = 1;
 	float a = 1;
 	float b = a + 1;
 	float c = a + b;
@@ -26,7 +26,9 @@ int main(void)
 		{
 			printf(", ");
 		}
-		printf("\n");
+
 	}
+	printf("\n");
+
 	return (0);
 }

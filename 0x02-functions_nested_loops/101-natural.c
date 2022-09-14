@@ -13,9 +13,9 @@ int main(void)
 
 	int a
 
-	n = 0;
-	m = 0;
-	mn = 0;
+	sum3 = 0;
+	sum5 = 0;
+	sum = 0;
 
 	for (a = 0; a < 1024; a++)
 
@@ -23,20 +23,20 @@ int main(void)
 		if ((a % 3) == 0)
 
 		{
-			n = n + a;
+			sum3 = sum3 + a;
 
 		} else if ((a % 5) == 0)
 
 		{
 
-			m = m + a;
+			sum5 = sum5 + a;
 
 		}
 	}
 
-	mn = n + n;
+	sum = sum3 + sum5;
 
-	prinf("%d\n", mn);
+	prinf("%d\n", sum);
 
 	return (0);
 }

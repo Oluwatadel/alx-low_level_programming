@@ -2,10 +2,9 @@
 #include "main.h"
 
 /**
- *  * print_times_table - Prints the n times table, starting with 0
- *   *
- *    * @n: The integer to pass
- *     */
+ * print_times_table - Prints the n times table, starting with 0
+ * @n: The integer to pass
+ */
 void print_times_table(int n)
 {
 	int a, b, c;
@@ -44,7 +43,6 @@ void print_times_table(int n)
 					_putchar((c % 10) + '0');
 				}
 			}
-			
 			_putchar('\n');
 		}
 	}

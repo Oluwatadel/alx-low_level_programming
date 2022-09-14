@@ -9,34 +9,18 @@
  */
 int main(void)
 {
-	int n, m, mn;
+	int i, sum = 0;
 
-	int a
-
-	sum3 = 0;
-	sum5 = 0;
-	sum = 0;
-
-	for (a = 0; a < 1024; a++)
+	for  (i = 0; i < 1024; i++)
 
 	{
-		if ((a % 3) == 0)
-
+		if ((i % 3) == 0 || (i % 5 == 0))
+		
 		{
-			sum3 = sum3 + a;
-
-		} else if ((a % 5) == 0)
-
-		{
-
-			sum5 = sum5 + a;
-
+			sum += i
 		}
+
+		printf("%d\n", sum);
+
+		return (0);
 	}
-
-	sum = sum3 + sum5;
-
-	prinf("%d\n", sum);
-
-	return (0);
-}

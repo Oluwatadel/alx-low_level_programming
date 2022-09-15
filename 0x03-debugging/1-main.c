@@ -8,12 +8,14 @@
 int main(void)
 {
 	int i;
+
 	printf("Infinite loop incoming :(\n");
 	i = 0;
 	while (i < 10)
 	{
 		putchar(i);
-/* There should be an increment for i which will make reference 
+/* 
+ * There should be an increment for i which will make reference
  * to i less than 10
  */
 	}

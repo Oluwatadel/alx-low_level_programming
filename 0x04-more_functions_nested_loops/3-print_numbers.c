@@ -1,17 +1,18 @@
 #include "main.h"
 /**
- * print_number - To print numbers from 0
- * @i: charcter i
+ * print_numbers - To print numbers from 0
+ * @c: charcter
  * Return: always 0
  */
 
 void print_numbers(void)
 {
-	int i;
-	for (i = 48; i <= 57; i++)
+	int k;
+
+	for (k = 48; k <= 57; k++)
 	{
 
-		_putchar(i);
+		_putchar(k);
 	}
 	_putchar('\n');
 }

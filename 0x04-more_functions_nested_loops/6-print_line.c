@@ -1,14 +1,15 @@
 #include "main.h"
 /**
  * print_line - To print a straight line
- * @n: the parameter for ieteration
+ * @n:	number of times character _ will appear
+ * @i: the parameter for ieteration
  * Return: always 0
  */
 void print_line(int n)
 {
-	int n;
+	int i;
 
-	for (n = 0; n < n; i++)
+	for (i = 0; i < n; i++)
 	{
 		_putchar('_');
 	}

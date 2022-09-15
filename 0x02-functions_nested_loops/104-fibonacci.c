@@ -7,8 +7,8 @@
  */
 int main(void)
 {
-	int counter = 2;
-	float a = 1;
+	int counter = 1;
+	float a = 0;
 	float b = a + 1;
 	float c = a + b;
 

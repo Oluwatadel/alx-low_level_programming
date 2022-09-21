@@ -3,7 +3,8 @@
 
 /**
  * *_strcat - To concatenate two strings
- * @*dest: One of the character to concatenate
+ * @dest: One of the character to concatenate
+ * @src: second character
  *
  * Return: Always 0;
  */

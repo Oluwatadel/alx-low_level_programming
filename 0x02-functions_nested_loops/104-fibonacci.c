@@ -8,8 +8,8 @@
 int main(void)
 {
 	int counter = 1;
-	float a = 0;
-	float b = a + 1;
+	float a = 1;
+	float b = 2;
 	float c = a + b;
 
 	printf("%.0f, ", a);
@@ -26,7 +26,6 @@ int main(void)
 		{
 			printf(", ");
 		}
-
 	}
 	printf("\n");
 

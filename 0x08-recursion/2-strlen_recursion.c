@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
- * _strlen_recursion - To display the length of a string
+ * _strlen_recursion- To display the length of a string
  * @s: String whose length would be determined
- * Retuen: Always 0
+ * Return: Always 0
  */
 
 int _strlen_recursion(char *s)

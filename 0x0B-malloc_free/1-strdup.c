@@ -1,49 +1,31 @@
 #include "main.h"
-#include <stdlib.h>
 #include <stdio.h>
-
+#include <stdlib.h>
 /**
- * _strlen - To define the length of a string
- * @s: string
- * Return: length of string which is i
- */
-int _strlen(char *s)
-{
-	int i;
-
-	for (i = 0; s[i] != '\0'; i++)
-	{
-	}
-		return (i);
-}
-/**
- * _strdup - function to return pointer to string
- * @str: str to be duplicated
- * Return: pointer to the string created
+ * _strdup - duplicates string
+ * @str: string to copy
+ * Return: char to newly duplicated string
  */
 char *_strdup(char *str)
 {
-	int len;
-	int size;
-	char *dup;
+	int i;
+	int c = 0;
+	char *t;
 
-/* Allocate memory for suplicate */
-	size = _strlen(str) + 1;
-	dup = malloc(sizeof(char) * size);
-	if (dup == NULL)
-	{
+	if (str == NULL)
 		return (NULL);
-	}
 
-	len = 0;
-	while (len < size)
-	{
-		if (dup == 0)
-		{
-			return (NULL);
-		}
-		dup[len] = str[len];
-		len++;
-	}
-	return (dup);
+	while (str[c] != '\0')
+		c++;
+
+	t = malloc(sizeof(char) * c + 1);
+
+	if (t == NULL)
+		return (NULL);
+
+	for (i = 0; i < c; i++)
+		t[i] = str[i];
+
+	return (t);
+
 }

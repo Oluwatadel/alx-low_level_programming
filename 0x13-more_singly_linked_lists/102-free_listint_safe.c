@@ -1,23 +1,42 @@
-#include <stdlib.h>
 #include "lists.h"
+#include <stdlib.h>
 
 /**
- * find_listint_loop - Find the loop inside a list
- * @head: Pointer to the start of a list
- *
- * Return: Address of where the loop starts, NULL if
- * no loop is found
+ * free_listint_safe - thsi function free a list in safe mode
+ * @h: the head of list
+ * Description: this function free a string in a safe mode
+ * section header: the header of this function is lists.h)*
+ * Return: the size of the list
  */
-listint_t *find_listint_loop(listint_t *head)
-{
-	listint_t *holder;
 
-	while (head != NULL)
+size_t free_listint_safe(listint_t **h)
+{
+	listint_t *tmp, *actual;
+	size_t i;
+	int rest;
+
+	i = 0, actual = *h;
+
+	while (actual)
 	{
-		holder = head;
-		head = head->next;
-		if (holder < head)
-			return (head);
+		rest = actual - actual->next;
+		if (rest > 0)
+		{
+			tmp = actual->next;
+			free(actual);
+			actual = tmp;
+			i++;
+		} else
+		{
+			free(actual);
+			*h = NULL;
+			i++;
+			break;
+		}
+
 	}
-	return (NULL);
+
+	*h = NULL;
+
+	return (i);
 }
